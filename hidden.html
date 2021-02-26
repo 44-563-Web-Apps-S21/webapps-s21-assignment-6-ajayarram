@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Hidden Page</title>
+ </head>
+<body>
+<h1>Hidden Things by AjaykumarReddy Arram</h1>
+
+
+<form>
+    <label for="form1_word">Enter the secret word </label>
+    <input type ="password" id="form1_word" name="form1_word" min=10 max=50 step=2 value=secret> <br>
+
+    <label for="form1_guess">Enter a Guess</label>
+    <input type ="text" id="form1_guess" name="form1_guess" autofocus> <br>
+
+    <input type="button" onclick="processGuess()" value="check the Guess">
+</form>
+
+
+
+
+<p id="result"> </p>
+
+<script> 
+
+        var correct = 0
+        var wrong= 0
+
+    function processGuess (){
+
+        let first = document.getElementById("form1_word").value
+        
+                
+        let sec = document.getElementById("form1_guess").value
+        
+        
+        if(first === sec){
+            correct++
+            document.getElementById("result").innerHTML = correct
+            window.alert("Congrats")
+        } else {
+            wrong++
+            document.getElementById("result").innerHTML = wrong 
+            window.alert("Sorry")
+            
+        }
+    }
+    </script>
+
+<div class="container">
+    <img src ="plant5.jpg" width="200px" height="200px" onclick="rotateImage()" id="image">
+    
+    <script>
+        var currentImage=0
+        function rotateImage()
+        {
+            switch(currentImage)
+            {
+                case 0: image.src = "plant1.jpg";
+                        currentImage++;
+                        break;
+                case 1: image.src = "plant2.jpg";
+                        currentImage++;
+                        break;
+                case 2: image.src = "plant5.jpg";
+                        currentImage=0;
+                        break;
+            }
+
+        }
+    </script>
+
+</div>
+
+
+</body>
+</html> 
