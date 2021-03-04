@@ -4,15 +4,20 @@
         <title>
             Demo for Check boxes 
         </title>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
  
 <body>
 
-<h2>Ajay kumar Reddy Arram builds a bear</h2>
+<h2 style="color: darkgoldenrod; font-family: 'Times New Roman', Times, serif;">Ajay kumar Reddy Arram builds a bear</h2>
 
 
 
-<form>
+<form style="margin-left: 20px;">
     <label for="form1_hat">Hat: </label>
     <input type ="checkbox" id="form1_hat" name="form1_hat" value=hat> <br>
     <label for="form1_scarf">scarf: </label>
@@ -21,20 +26,20 @@
     <label for="form1_shirt">shirt: </label>
     <input type ="checkbox" id="form1_shirt" name="form1_shirt" autofocus> <br>
 
-    <input type="button" onclick="startbear()" value="Initiate bear">
+    <input type="button" onclick="startbear()" value="Initiate bear" class="btn btn-success">
 </form>
 
 
- <p id="result">Enter the required input </p>
+ <p id="result" style="margin-left: 20px; margin-top:20px;" >Enter the required input </p>
 
-<form>
+<form style="margin-left: 20px;"> 
     <label for="form1_prop">Enter a property </label>
-    <input type ="text" id="form1_prop" name="form1_prop" min=10 max=50 step=2 value=color> <br>
+    <input type ="text" id="form1_prop" name="form1_prop" min=10 max=50 step=2 value=color style="margin-left:20px;"> <br>
 
     <label for="form1_value">Enter a value </label>
-    <input type ="text" id="form1_value" name="form1_value"> <br>
+    <input type ="text" id="form1_value" name="form1_value" style="margin-left:40px;"> <br>
 
-    <input type="button" onclick="updatebear()" value="Update the Bear">
+    <input type="button" onclick="updatebear()" value="Update the Bear" class="btn btn-success" style="margin-top: 15px;">
 </form>
 
 <script>
